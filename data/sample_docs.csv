@@ -1,0 +1,11 @@
+id,title,text
+1,"Introduction to Machine Learning","Machine learning is a field of study that gives computers the ability to learn without being explicitly programmed. It focuses on developing algorithms that can learn from and make predictions on data."
+2,"Natural Language Processing","NLP is a field of AI that focuses on the interaction between computers and humans through natural language. It helps machines understand, interpret and manipulate human language."
+3,"Deep Learning Basics","Deep learning is a subset of machine learning that uses neural networks with many layers. These deep neural networks can automatically learn hierarchical features from data."
+4,"Vector Databases","Vector databases are specialized systems designed to store and query embeddings or vector representations of data. They're optimized for similarity search operations."
+5,"Semantic Search Explained","Semantic search is a data searching technique where a search query aims to not only find keywords but understand the contextual meaning of the search terms to improve accuracy."
+6,"AWS EC2 Instances","Amazon Elastic Compute Cloud (EC2) provides scalable computing capacity in the cloud. It allows users to rent virtual computers on which to run their own applications."
+7,"FAISS for Vector Search","Facebook AI Similarity Search (FAISS) is a library that allows developers to quickly search for embeddings of multimedia documents that are similar to each other."
+8,"Text Embeddings","Text embeddings are numerical representations of text in a continuous vector space where semantically similar texts are mapped to nearby points."
+9,"FastAPI Development","FastAPI is a modern, fast web framework for building APIs with Python based on standard Python type hints. It's designed to be easy to use and high performance."
+10,"Sentence Transformers","Sentence Transformers is a Python framework for state-of-the-art sentence, paragraph and image embeddings. The models are based on transformer networks like BERT."

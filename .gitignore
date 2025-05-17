@@ -1,0 +1,8 @@
+data/document_index.faiss
+data/documents.pkl
+data/embeddings.pkl
+
+test_data/document_index.faiss
+test_data/documents.pkl
+test_data/embeddings.pkl
+

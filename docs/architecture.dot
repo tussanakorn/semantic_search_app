@@ -1,0 +1,29 @@
+digraph ARCHITECTURE {
+  rankdir=LR;
+  node [color="black", fillcolor="#E6E6E6", style="filled,bold,rounded", fontname="Arial"];
+  
+  subgraph cluster_ec2 {
+    label="EC2 Instance";
+    style=filled;
+    color=lightgrey;
+    
+    subgraph cluster_docker {
+      label="Docker Environment";
+      style=filled;
+      color=white;
+      
+      nginx [label="NGINX\nContainer", shape=rectangle, fillcolor="#E78F81"];
+      api [label="API Service\n(FastAPI in Container)", shape=rectangle, fillcolor="#B7E0FF"];
+      vector_db [label="Vector Database\nContainer\n(FAISS)", shape=rectangle, fillcolor="#B7FFB7"];
+      
+      nginx -> api;
+      api -> vector_db;
+    }
+  }
+  
+  client [label="Client\n(Users)", shape=rectangle, fillcolor="#FFE0B7"];
+  corpus [label="Document\nCorpus", shape=rectangle, fillcolor="#E0B7FF"];
+  
+  client -> nginx;
+  corpus -> vector_db;
+}

@@ -1,0 +1,10 @@
+digraph INFRA {
+  node [ color = "black", fillcolor = "#E6E6E6", height =1, style = "filled,bold,rounded", fontname = "Arial" ];
+  "semantic-search-api" [ label = "semantic-search-api
+(Docker::Container)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "semantic-search-nginx" [ label = "semantic-search-nginx
+(Docker::Container)", shape =rectangle, fillcolor = "#E78F81" ];
+  "semantic-search-network" [ label = "semantic-search-network
+(Docker::Network)", shape =rectangle ];
+  "semantic-search-nginx" -> "semantic-search-api";
+}
